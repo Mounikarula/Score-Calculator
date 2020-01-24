@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title>MultiMath</title>
+</head>
+<body>
+	<nav class="navbarnavbar-default">
+		<div class="container-fluid">
+			<div class="navbar-hearder">
+				<span class="navbar-brand">MultiMath</span>
+			</div>
+		</div>
+	</nav>
+
+	<div class="form-horizontal" id="nameForm">
+		<div class="form-group">
+			<label for="playerName" class="col-sm-2 control-label">Player Name</label>
+			<div class="col-sm-2">
+				<input type="text" class="form-control" id="playerName" size="20" placeholder="Player Name">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="factor" class="col-sm-2 control-label">Factor</label>
+			<div class="col-sm-2">
+				<input type="text" class="form-control" id="factor" size="20" placeholder="Factor">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="problemCount" class="col-sm-2 control-label">Number of Problems</label>
+			<div class="col-sm-2">
+				<input type="text" class="form-control" id="problemCount" size="20" placeholder="Number of Problems">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button class="btn btn-primary" id="startGame">Start Game</button>
+				<button class="btn btn-success" id="calculate">Calculate Score</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-horizontal" id="game"></div>
+	<div class="col-sm-offset-2 col-sm-10" id="scores">
+		<h2>Scoreboard</h2>
+		<h4>No scores yet</h4>
+	</div>
+
+	<div class="col-sm-offset-2 col-sm-10" id="messages"></div>
+
+	<script type="text/javascript" src="/app/app.js"></script>
+</body>
+</html>
